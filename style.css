@@ -1,0 +1,100 @@
+*{
+	margin :0px ;
+	padding :0px ;
+	box-sizing :border-box ;
+
+}
+.container {
+	position :fixed ;
+	top :0px ;
+	left :0px ;
+	height :100vh ;
+	width :100% ;
+	background-image: linear-gradient(360deg, #faa5cf, #fa5fac);
+	display :flex ;
+	align-items :center;
+	justify-content: center;
+}
+.to-do {
+	max-width: 400px ;
+	width :100% ;
+	height : 300px ;
+	background-color: lightsteelblue ;
+	border-radius: 25px ;
+	overflow :hidden ;
+	padding: 25px;
+}
+.task-div {
+	margin-top :20px ;
+	display : flex ;
+	align-items : center;
+	background-color :floralwhite;
+	height: 40px;
+	position : relative;
+	border-radius :10px ;
+	padding-left :4px ;
+}
+button {
+	position: absolute;
+	right :0px ;
+	border :none ;
+	outline :none ;
+	height : 32px ;
+	border-radius : 4px ;
+	width :70px ;
+	background-color : lightseagreen;
+	color : whitesmoke ;
+	font-weight: bolder ;
+	cursor :pointer ;
+}
+input {
+	flex :1 ;
+	height :32px;
+	border :none ;
+	outline :none ;
+}
+ul li {
+	list-style-type: none;
+	padding :0px 25px 10px ;
+	position :relative;
+
+}
+ul li::before {
+	content :"" ;
+	background-image : url("https://si.wsj.net/public/resources/images/B3-AF434_LISTbi_8SR_20180426163100.gif") ;
+	backgroound-size :contain ;
+	height : 15px ;
+	width :15px ;
+	position :absolute ;
+	top :2.5px ;
+	left :3px ;
+}
+ul li.checked {
+	color :gray ;
+	text-decoration: line-through;
+
+
+
+}
+ul li.checked::before {
+	background-image :url("https://t4.ftcdn.net/jpg/02/56/63/93/360_F_256639327_i4SnYVgaRNsMz5GWWB68owtKepLI1XKa.jpg");
+	positon : absolute ;
+	background-size :contain;
+
+
+}
+span {
+	position :absolute ;
+	right :0px ;
+	font-size :10px ;
+	top :10px ;
+}
+button:hover {
+	color : black;
+	font : bolder;
+	transform : scale(0.9,0.9);
+
+}
+.gif{
+	margin-bottom :10px;
+}
